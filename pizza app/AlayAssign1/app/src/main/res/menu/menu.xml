@@ -1,17 +1,23 @@
-<?xml	version="1.0"	encoding="utf-8"?>
-<menu xmlns:android="hEp://schemas.android.com/apk/res/android"
-    xmlns:android1="http://schemas.android.com/apk/res/android">
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
+    <!-- "Mark Favorite", should appear as action button if possible -->
+
+    <!-- Settings, should always be in the overflow -->
     <item
-        android:id="@+id/stop"
-        android1:title="Stop!"
-        android:orderInCategory="4"></item>
-    <item
-        android:id="@+id/accel"
-        android1:title="Speed	up!"
-        android:orderInCategory="2"></item>
-    <item
-        android:id="@+id/decel"
-        android1:title= "Slow	Down!"
-        android:orderInCategory="3"></item>
+
+        android:id="@+id/Alay"
+        android:title="Alay Lad"
+        app:showAsAction="never"
+        />
+    <item android:id="@+id/Help"
+        android:title="help"
+        app:showAsAction="never"/>
+
+    <item android:id="@+id/Pizza"
+        android:icon="@drawable/pizzasliceicon"
+        android:title="Pizza"
+        app:showAsAction="always"/>
+
+
 </menu>

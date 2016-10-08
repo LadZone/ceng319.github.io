@@ -1,3 +1,6 @@
+<!-- Name: Alay Lad -->
+<!-- Student Number: N00676600-->
+<!-- Name: Assignment 1 -->
 <resources>
     <string name="app_name">AlayAssign1</string>
     <string name="title_activity_menu"></string>
@@ -85,6 +88,31 @@
     <string name="cheese_lover_idea">Extra pizza mozzarella and two of your favourite toppings.</string>
 
 
+    <string name="thankyou">Thank you for your order</string>
+    <string name="money">Total:</string>
+    <string name="orderNum">Order Number is:</string>
+    <string name="orderConf">Order Confirmation</string>
+    <string name="MENU">MENU</string>
+
+
+
+    <string name="FName">First Name: </string>
+    <string name="LName">Last Name: </string>
+    <string name="Address">Address: </string>
+    <string name="city">City: </string>
+    <string name="state">State: </string>
+    <string name="Country">Country: </string>
+    <string name="zip">Zip(A1B2C3): </string>
+    <string name="phone">Phone Number: </string>
+    <string name="Email">Email: </string>
+    <string name="Card_holder">Caedit Card Holder: </string>
+    <string name="Card_number">Credit Card Number: </string>
+    <string name="exp">Expiration Date(MMYYYY): </string>
+    <string name="Billing_Information">Billing Information</string>
+    <string name="name">Full Name: </string>
+    <string name="Card_type">Card Type: </string>
+    <string name="Stubmit">SUBMIT</string>
+
     <string-array name="Credit">
         <item>Visa </item>
         <item>Master Card</item>
@@ -92,5 +120,6 @@
     <string name="title_activity_detail"></string>
     <string name="title_activity_order_confirmation"></string>
     <string name="title_activity_order"></string>
-    <string name="title_activity_special_details">SpecialDetails</string>
+    <string name="title_activity_special_details"></string>
+    <string name="title_activity_thank_you"></string>
 </resources>

@@ -1,4 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
+   <!-- Name: Alay Lad -->
+    <!-- Student Number: N00676600-->
+    <!-- Name: Assignment 1 -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="alay.lad">
 
@@ -10,7 +13,9 @@
         android:theme="@style/AppTheme">
         <activity
             android:name=".AlayActivity"
+
             android:configChanges="orientation|screenSize|keyboardHidden">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -47,6 +52,10 @@
         <activity
             android:name=".SpecialDetails"
             android:label="@string/title_activity_special_details"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".ThankYou"
+            android:label="@string/title_activity_thank_you"
             android:theme="@style/AppTheme"></activity>
     </application>
 

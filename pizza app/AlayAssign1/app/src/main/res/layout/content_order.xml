@@ -1,4 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!-- Name: Alay Lad -->
+<!-- Student Number: N00676600-->
+<!-- Name: Assignment 1 -->
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -25,8 +28,8 @@
             android:orientation="vertical" >
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Billing Information"
+        android:layout_height="40dp"
+        android:text="@string/Billing_Information"
 
         android:id="@+id/textView4"
         android:textColor="@android:color/holo_red_dark"
@@ -56,7 +59,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="text"
-                android:hint="First Name"
+                android:hint="@string/FName"
                 android:textColorLink="@android:color/holo_red_dark" />
         </android.support.design.widget.TextInputLayout>
 
@@ -73,7 +76,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="text"
-                android:hint="Last Name"
+                android:hint="@string/LName"
                 android:textColorLink="@android:color/holo_red_dark" />
         </android.support.design.widget.TextInputLayout>
 
@@ -91,7 +94,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="text"
-                android:hint="Address"
+                android:hint="@string/Address"
                 android:textColorLink="@android:color/holo_red_dark" />
         </android.support.design.widget.TextInputLayout>
 
@@ -109,7 +112,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="text"
-                android:hint="City"
+                android:hint="@string/city"
                 android:textColorLink="@android:color/holo_red_dark" />
         </android.support.design.widget.TextInputLayout>
 
@@ -124,7 +127,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="text"
-            android:hint="State"
+            android:hint="@string/state"
             android:textColorLink="@android:color/holo_red_dark" />
     </android.support.design.widget.TextInputLayout>
 
@@ -147,7 +150,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="text"
-                android:hint="Country"
+                android:hint="@string/Country"
                 android:textColorLink="@android:color/holo_red_dark" />
         </android.support.design.widget.TextInputLayout>
 
@@ -164,7 +167,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="text"
-                android:hint="zip"
+                android:hint="@string/zip"
                 android:textColorLink="@android:color/holo_red_dark" />
         </android.support.design.widget.TextInputLayout>
 
@@ -180,7 +183,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="number"
-                android:hint="Phone Number"
+                android:hint="@string/phone"
                 android:textColorLink="@android:color/holo_red_dark" />
         </android.support.design.widget.TextInputLayout>
 
@@ -196,7 +199,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="textEmailAddress"
-                android:hint="Email"
+                android:hint="@string/Email"
                 android:textColorLink="@android:color/holo_red_dark" />
         </android.support.design.widget.TextInputLayout>
 
@@ -211,7 +214,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="text"
-                android:hint="Credit Card Holder "
+                android:hint="@string/Card_holder"
                 android:textColorLink="@android:color/holo_red_dark" />
         </android.support.design.widget.TextInputLayout>
 
@@ -242,7 +245,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="number"
-                android:hint="Credit Card #"
+                android:hint="@string/Card_number"
                 android:textColorLink="@android:color/holo_red_dark" />
         </android.support.design.widget.TextInputLayout>
 
@@ -258,7 +261,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="number"
-                android:hint="Expiration date(MMYYYY)"
+                android:hint="@string/exp"
                 android:textColorLink="@android:color/holo_red_dark" />
         </android.support.design.widget.TextInputLayout>
 

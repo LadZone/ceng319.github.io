@@ -1,4 +1,7 @@
 package alay.lad;
+//Name: Alay Lad
+//Student ID: N00676600
+//Assignment 1
 
 import android.content.Intent;
 import android.content.res.Configuration;
@@ -51,5 +54,6 @@ private Button button;
 
 
     }
+
 }
 

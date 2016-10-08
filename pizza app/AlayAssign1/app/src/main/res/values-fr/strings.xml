@@ -1,9 +1,125 @@
+<!-- Name: Alay Lad -->
+<!-- Student Number: N00676600-->
+<!-- Name: Assignment 1 -->
 <resources>
-    <string name="app_name">Alay</string>
+    <string name="app_name">AlayAssign1</string>
+    <string name="title_activity_menu"></string>
     <string name="custom_pizza">CREER VOTRE PROPRE PIZZA</string>
     <string name="custom_pizza_idea">Créez votre Pizza idéal</string>
     <string name="specials_pizza">PIZZA</string>
     <string name="start">DÉMARRER</string>
     <string name="ENGLISH">ENGLISH</string>
     <string name="FRENCH">FRENCH</string>
+    <string name="title_activity_special"></string>
+    <string name="special">SPÉCIAL</string>
+
+
+    <string name="menu">LE MENU</string>
+
+
+    <string name="beef">Du boeuf</string>
+    <string name="pepperoni">Pepperoni</string>
+    <string name="bacon">Bacon</string>
+    <string name="green_pepper">Poivre vert</string>
+
+    <string name="hot_sausage">Saucisse Hot</string>
+    <string name="mushroom">Champignon</string>
+    <string name="pineapple">Ananas</string>
+    <string name="red_onions">Oignons rouges</string>
+
+    <string name="red_pepper">Poivron rouge</string>
+    <string name="green_olives">Olives vertes</string>
+    <string name="chicken">poulet</string>
+    <string name="tomatoes">Tomates</string>
+
+    <string name="bacon_crumble">Bacon Crumble</string>
+    <string name="ham">jambon</string>
+    <string name="mild_sausage">Saucisse Mild</string>
+    <string name="black_olives">Olives noires</string>
+
+
+    <string name="next">PROCHAIN</string>
+    <string name="back">ARRIÈRE</string>
+
+
+    <string name="meat">MOI À</string>
+    <string name="veggies">LÉGUMES</string>
+
+
+    <string name="size">SIZE</string>
+    <string name="cheese">CHEESE</string>
+
+
+    <string-array name="TAILLE">
+        <item>12" Medium </item>
+        <item>14" Large</item>
+        <item>16" Extra Large</item>
+    </string-array>
+
+    <string-array name="FROMAGE">
+        <item>Pizza Mozzarella </item>
+        <item>Ordinaire</item>
+    </string-array>
+
+
+    <string name="meat_lover">VIANDE LOVER</string>
+    <string name="meat_lover_idea">Pepperoni, saucisse italienne, saucisse douce, boeuf garniture, jambon, bacon crumble et la pizza mozzarella.</string>
+
+    <string name="pepperoni_lover">PEPPERONI LOVER</string>
+    <string name="pepperoni_love_idea">Pepperoni, saucisse italienne, saucisse douce, boeuf garniture, jambon, bacon crumble et la pizza mozzarella.</string>
+
+    <string name="super_supreme">SUPER SUPREME</string>
+    <string name="super_supreme_idea">Pepperoni, saucisse italienne, saucisse douce, bœuf garniture, jambon, poivron vert, les champignons, oignon rouge, olives noires et de la pizza mozzarella.</string>
+
+    <string name="supreme_lover">SUPREME LOVER</string>
+    <string name="supreme_lover_idea">Pepperoni, saucisse douce, bœuf nappage, le poivron vert, les champignons, oignon rouge et la pizza mozzarella.</string>
+
+
+    <string name="triple_crown">TRIPLE COURONNE</string>
+    <string name="triple_crown_idea">Pepperoni, champignons, poivrons verts croquants et couronné de 100% Pizza Mozzarella.</string>
+
+    <string name="hawaiian">HAWAÏEN</string>
+    <string name="hawaiian_idea">La combinaison étonnante et classique de jambon et ananas sur une base de votre choix avec la pizza mozzarella supplémentaire.</string>
+
+    <string name="chicken_caesar">CHICKEN CAESAR</string>
+    <string name="chicken_caesar_idea">Hail Caesar! La salade classique a inspiré cette pizza au poulet grillé, bacon, ail rôti, sauce crémeuse Alfredo et 100% Pizza Mozzarella et les fromages de parmesan.</string>
+
+    <string name="cheese_lover">FROMAGE LOVER</string>
+    <string name="cheese_lover_idea">mozzarella à pizza extra et deux de vos garnitures préférées.</string>
+
+
+    <string name="thankyou">Nous vous remercions de votre commande</string>
+    <string name="money">Total:</string>
+    <string name="orderNum">Numéro de commande est:</string>
+    <string name="orderConf">Confirmation de commande</string>
+    <string name="MENU">LE MENU</string>
+
+
+
+    <string name="FName">Prénom: </string>
+    <string name="LName">Nom de famille: </string>
+    <string name="Address">Adresse: </string>
+    <string name="city">Ville: </string>
+    <string name="state">Etat: </string>
+    <string name="Country">Pays: </string>
+    <string name="zip">Zip(A1B2C3): </string>
+    <string name="phone">Numéro de téléphone: </string>
+    <string name="Email">Email: </string>
+    <string name="Card_holder">Titulaire de la carte de crédit: </string>
+    <string name="Card_number">Numéro de carte de crédit: </string>
+    <string name="exp">Expiration Date (JJMMAA): </string>
+    <string name="Billing_Information">détails de facturation</string>
+    <string name="name">Nom complet: </string>
+    <string name="Card_type">Type de carte: </string>
+    <string name="Stubmit">SOUMETTRE</string>
+
+    <string-array name="Credit">
+        <item>Visa </item>
+        <item>MasterCard</item>
+    </string-array>
+    <string name="title_activity_detail"></string>
+    <string name="title_activity_order_confirmation"></string>
+    <string name="title_activity_order"></string>
+    <string name="title_activity_special_details"></string>
+    <string name="title_activity_thank_you"></string>
 </resources>

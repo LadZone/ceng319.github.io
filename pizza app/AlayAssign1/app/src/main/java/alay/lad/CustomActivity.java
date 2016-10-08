@@ -1,7 +1,11 @@
 package alay.lad;
+//Name: Alay Lad
+//Student ID: N00676600
+//Assignment 1
 
 import android.content.Intent;
 import android.content.res.Configuration;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
@@ -41,15 +45,29 @@ public class CustomActivity extends AppCompatActivity {
     }
 
 
+    @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
-        if (id == R.id.stop) {
-            return true;
+        switch (item.getItemId()) {
+            case R.id.Alay:
+                Uri uri2 = Uri.parse("https://github.com/ladzone/CENG319.github.io"); // missing 'http://' will cause crashed
+                Intent intent2 = new Intent(Intent.ACTION_VIEW, uri2);
+                startActivity(intent2);
+                return true;
+            case R.id.Pizza:
+                Uri uri1 = Uri.parse("https://www.pizzahut.ca/home1"); // missing 'http://' will cause crashed
+                Intent intent1 = new Intent(Intent.ACTION_VIEW, uri1);
+                startActivity(intent1);
+                return true;
+            case R.id.Help:
+                Uri uri = Uri.parse("http://www.google.com"); // missing 'http://' will cause crashed
+                Intent intent = new Intent(Intent.ACTION_VIEW, uri);
+                startActivity(intent);
+                return true;
+            default:
+
         }
         return super.onOptionsItemSelected(item);
+
     }
 
 
@@ -156,26 +174,26 @@ public class CustomActivity extends AppCompatActivity {
         switch(view.getId()) {
             case R.id.checkbox_Beef:
                 if (checked) {
-                    selectionmeat.add("Beef");
+                    selectionmeat.add(getString(R.string.beef));
 
                 }else {
-                    selectionmeat.remove("Beef");
+                    selectionmeat.remove(getString(R.string.beef));
                 }
                 break;
             case R.id.checkbox_Pepperoni:
                 if (checked) {
-                    selectionmeat.add("Pepperoni");
+                    selectionmeat.add(getString(R.string.pepperoni));
 
                 }else {
-                    selectionmeat.remove("Pepperoni");
+                    selectionmeat.remove(getString(R.string.pepperoni));
                 }
                 break;
             case R.id.checkbox_Bacon:
                 if (checked) {
-                    selectionmeat.add("Bacon");
+                    selectionmeat.add(getString(R.string.bacon));
 
                 }else {
-                    selectionmeat.remove("Bacon");
+                    selectionmeat.remove(getString(R.string.bacon));
                 }
                 break;
 
@@ -185,26 +203,26 @@ public class CustomActivity extends AppCompatActivity {
 
             case R.id.checkbox_hot_sausage:
                 if (checked) {
-                    selectionmeat.add("Hot Sausage");
+                    selectionmeat.add(getString(R.string.hot_sausage));
 
                 }else {
-                    selectionmeat.remove("Hot Sausage");
+                    selectionmeat.remove(getString(R.string.hot_sausage));
                 }
                 break;
             case R.id.checkbox_Mushroom:
                 if (checked) {
-                    selection.add("Mushroom");
+                    selection.add(getString(R.string.mushroom));
 
                 }else {
-                    selection.remove("Mushroom");
+                    selection.remove(getString(R.string.mushroom));
                 }
                 break;
             case R.id.checkbox_Pineapple:
                 if (checked) {
-                    selection.add("Pineapple");
+                    selection.add(getString(R.string.pineapple));
 
                 }else {
-                    selection.remove("Pineapple");
+                    selection.remove(getString(R.string.pineapple));
                 }
                 break;
 
@@ -213,26 +231,26 @@ public class CustomActivity extends AppCompatActivity {
 
             case R.id.checkbox_red_pepper:
                 if (checked) {
-                    selection.add("Red Pepper");
+                    selection.add(getString(R.string.red_pepper));
 
                 }else {
-                    selection.remove("Red Pepper");
+                    selection.remove(getString(R.string.red_pepper));
                 }
                 break;
             case R.id.checkbox_green_olives:
                 if (checked) {
-                    selection.add("Green Olives");
+                    selection.add(getString(R.string.green_olives));
 
                 }else {
-                    selection.remove("Green Olives");
+                    selection.remove(getString(R.string.green_olives));
                 }
                 break;
             case R.id.checkbox_Chicken:
                 if (checked) {
-                    selectionmeat.add("Chicken");
+                    selectionmeat.add(getString(R.string.chicken));
 
                 }else {
-                    selectionmeat.remove("Chicken");
+                    selectionmeat.remove(getString(R.string.chicken));
                 }
                 break;
 
@@ -242,26 +260,26 @@ public class CustomActivity extends AppCompatActivity {
 
             case R.id.checkbox_Bacon_Crumble:
                 if (checked) {
-                    selectionmeat.add("Bacon Crumble");
+                    selectionmeat.add(getString(R.string.bacon_crumble));
 
                 }else {
-                    selectionmeat.remove("Bacon Crumble");
+                    selectionmeat.remove(getString(R.string.bacon_crumble));
                 }
                 break;
             case R.id.checkbox_Ham:
                 if (checked) {
-                    selectionmeat.add("Ham");
+                    selectionmeat.add(getString(R.string.ham));
 
                 }else {
-                    selectionmeat.remove("Ham");
+                    selectionmeat.remove(getString(R.string.ham));
                 }
                 break;
             case R.id.checkbox_mild_sausage:
                 if (checked) {
-                    selectionmeat.add("Mild Sausage");
+                    selectionmeat.add(getString(R.string.mild_sausage));
 
                 }else {
-                    selectionmeat.remove("Mild Sausage");
+                    selectionmeat.remove(getString(R.string.mild_sausage));
                 }
                 break;
 
@@ -271,34 +289,34 @@ public class CustomActivity extends AppCompatActivity {
 
             case R.id.checkbox_Green_Pepper:
                 if (checked) {
-                    selection.add("Green Pepper");
+                    selection.add(getString(R.string.green_pepper));
 
                 }else {
-                    selection.remove("Green Pepper");
+                    selection.remove(getString(R.string.green_pepper));
                 }
                 break;
             case R.id.checkbox_red_onions:
                 if (checked) {
-                    selection.add("Red Onions");
+                    selection.add(getString(R.string.red_onions));
 
                 }else {
-                    selection.remove("Red Onions");
+                    selection.remove(getString(R.string.red_onions));
                 }
                 break;
             case R.id.checkbox_Tomatoes:
                 if (checked) {
-                    selection.add("Tomatoes");
+                    selection.add(getString(R.string.tomatoes));
 
                 }else {
-                    selection.remove("Tomatoes");
+                    selection.remove(getString(R.string.tomatoes));
                 }
                 break;
             case R.id.checkbox_black_olives:
                 if (checked) {
-                    selection.add("Black Olives");
+                    selection.add(getString(R.string.black_olives));
 
                 }else {
-                    selection.remove("Black Olives");
+                    selection.remove(getString(R.string.black_olives));
                 }
                 break;
 

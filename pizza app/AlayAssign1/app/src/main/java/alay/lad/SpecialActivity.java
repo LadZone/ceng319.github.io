@@ -1,7 +1,11 @@
 package alay.lad;
+//Name: Alay Lad
+//Student ID: N00676600
+//Assignment 1
 
 import android.content.Intent;
 import android.content.res.Configuration;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
@@ -37,15 +41,29 @@ public class SpecialActivity extends AppCompatActivity {
         return	true;
     }
 
+    @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
-        if (id == R.id.stop) {
-            return true;
+        switch (item.getItemId()) {
+            case R.id.Alay:
+                Uri uri2 = Uri.parse("https://github.com/ladzone/CENG319.github.io"); // missing 'http://' will cause crashed
+                Intent intent2 = new Intent(Intent.ACTION_VIEW, uri2);
+                startActivity(intent2);
+                return true;
+            case R.id.Pizza:
+                Uri uri1 = Uri.parse("https://www.pizzahut.ca/home1"); // missing 'http://' will cause crashed
+                Intent intent1 = new Intent(Intent.ACTION_VIEW, uri1);
+                startActivity(intent1);
+                return true;
+            case R.id.Help:
+                Uri uri = Uri.parse("http://www.google.com"); // missing 'http://' will cause crashed
+                Intent intent = new Intent(Intent.ACTION_VIEW, uri);
+                startActivity(intent);
+                return true;
+            default:
+
         }
         return super.onOptionsItemSelected(item);
+
     }
     // Check screen orientation or screen rotate event here
     @Override
@@ -128,36 +146,49 @@ public class SpecialActivity extends AppCompatActivity {
             case R.id.checkbox_chesses_img:
                 if (checked) {
                     selection.add("----------------------------------------------------------------------------------");
-                    selection.add("CHEESE LOVER");
+                    selection.add(getString(R.string.cheese_lover));
+
                     selection.add("----------------------------------------------------------------------------------");
-                    selection.add("Extra pizza mozzarella and two of your favourite toppings.");
+                    selection.add(getString(R.string.cheese_lover_idea));
 
                 }else {
-                    selection.remove("CHEESE LOVER");
-                    selection.remove("Extra pizza mozzarella and two of your favourite toppings.");
+                    selection.remove("----------------------------------------------------------------------------------");
+                    selection.remove(getString(R.string.cheese_lover));
+                    selection.remove("----------------------------------------------------------------------------------");
+                    selection.remove(getString(R.string.cheese_lover_idea));
                 }
                 break;
+
+
             case R.id.checkbox_supreme_img:
                 if (checked) {
                     selection.add("----------------------------------------------------------------------------------");
-                    selection.add("SUPREME LOVER");
+                    selection.add(getString(R.string.supreme_lover));
                     selection.add("----------------------------------------------------------------------------------");
-                    selection.add("Pepperoni, mild sausage, beef topping, green pepper, mushrooms, red onion and pizza mozzarella.");
+                    selection.add(getString(R.string.supreme_lover_idea));
                 }else {
-                    selection.remove("SUPREME LOVER");
-                    selection.remove("Pepperoni, mild sausage, beef topping, green pepper, mushrooms, red onion and pizza mozzarella.");
+                    selection.remove("----------------------------------------------------------------------------------");
+                    selection.remove(getString(R.string.supreme_lover));
+                    selection.remove("----------------------------------------------------------------------------------");
+                    selection.remove(getString(R.string.supreme_lover_idea));
                 }
                 break;
+
+
+
             case R.id.checkbox_supersupreme_img:
                 if (checked) {
                     selection.add("----------------------------------------------------------------------------------");
-                    selection.add("SUPER SUPREME");
+                    selection.add(getString(R.string.super_supreme));
                     selection.add("----------------------------------------------------------------------------------");
-                    selection.add("Pepperoni, Italian Sausage, mild sausage, beef topping, ham, green pepper, mushrooms, red onion, black olives and pizza mozzarella.");
+                    selection.add(getString(R.string.super_supreme_idea));
 
                 }else {
-                    selection.remove("SUPER SUPREME");
-                    selection.remove("Pepperoni, Italian Sausage, mild sausage, beef topping, ham, green pepper, mushrooms, red onion, black olives and pizza mozzarella.");
+                    selection.remove("----------------------------------------------------------------------------------");
+                    selection.remove(getString(R.string.super_supreme));
+                    selection.remove("----------------------------------------------------------------------------------");
+                    selection.remove(getString(R.string.super_supreme_idea));
+
                 }
                 break;
 
@@ -168,38 +199,44 @@ public class SpecialActivity extends AppCompatActivity {
             case R.id.checkbox_pepperonilovers_img:
                 if (checked) {
                     selection.add("----------------------------------------------------------------------------------");
-                    selection.add("PEPPERONI LOVER");
+                    selection.add(getString(R.string.pepperoni_lover));
                     selection.add("----------------------------------------------------------------------------------");
-                    selection.add("Pepperoni, Italian sausage, mild sausage, beef topping, ham, bacon crumble and pizza mozzarella.");
+                    selection.add(getString(R.string.pepperoni_love_idea));
 
                 }else {
-                    selection.remove("PEPPERONI LOVER");
-                    selection.remove("Pepperoni, Italian sausage, mild sausage, beef topping, ham, bacon crumble and pizza mozzarella.");
+                    selection.remove("----------------------------------------------------------------------------------");
+                    selection.remove(getString(R.string.pepperoni_lover));
+                    selection.remove("----------------------------------------------------------------------------------");
+                    selection.remove(getString(R.string.pepperoni_love_idea));
                 }
                 break;
             case R.id.checkbox_meatlover_img:
                 if (checked) {
                     selection.add("----------------------------------------------------------------------------------");
-                    selection.add("MEAT LOVER");
+                    selection.add(getString(R.string.meat_lover));
                     selection.add("----------------------------------------------------------------------------------");
-                    selection.add("Pepperoni, Italian sausage, mild sausage, beef topping, ham, bacon crumble and pizza mozzarella.");
+                    selection.add(getString(R.string.meat_lover_idea));
 
                 }else {
-                    selection.remove("MEAT LOVER");
-                    selection.remove("Pepperoni, Italian sausage, mild sausage, beef topping, ham, bacon crumble and pizza mozzarella.");
+                    selection.remove("----------------------------------------------------------------------------------");
+                    selection.remove(getString(R.string.meat_lover));
+                    selection.remove("----------------------------------------------------------------------------------");
+                    selection.remove(getString(R.string.meat_lover_idea));
                 }
                 break;
             case R.id.checkbox_hawaiian_img:
                 if (checked) {
                     selection.add("----------------------------------------------------------------------------------");
-                    selection.add("HAWAIIAN");
+                    selection.add(getString(R.string.hawaiian));
                     selection.add("----------------------------------------------------------------------------------");
-                    selection.add("The amazing and classic combination of Ham and Pineapple on a base of your choice with extra pizza mozzarella.");
+                    selection.add(getString(R.string.hawaiian_idea));
 
 
                 }else {
-                    selection.remove("HAWAIIAN");
-                    selection.remove("The amazing and classic combination of Ham and Pineapple on a base of your choice with extra pizza mozzarella.");
+                    selection.remove("----------------------------------------------------------------------------------");
+                    selection.remove(getString(R.string.hawaiian));
+                    selection.remove("----------------------------------------------------------------------------------");
+                    selection.remove(getString(R.string.hawaiian_idea));
                 }
                 break;
 
@@ -209,24 +246,29 @@ public class SpecialActivity extends AppCompatActivity {
             case R.id.checkbox_chickencaesar_img:
                 if (checked) {
                     selection.add("----------------------------------------------------------------------------------");
-                    selection.add("CHICKEN CAESAR");
+                    selection.add(getString(R.string.chicken_caesar));
                     selection.add("----------------------------------------------------------------------------------");
-                    selection.add("Hail Caesar! The classic salad inspired this pizza with grilled chicken, bacon, roasted garlic, creamy Alfredo sauce and 100% Pizza Mozzarella and parmesan cheeses.");
+                    selection.add(getString(R.string.chicken_caesar_idea));
                 }else {
-                    selection.remove("CHICKEN CAESAR");
-                    selection.remove("Hail Caesar! The classic salad inspired this pizza with grilled chicken, bacon, roasted garlic, creamy Alfredo sauce and 100% Pizza Mozzarella and parmesan cheeses.");
+                    selection.remove("----------------------------------------------------------------------------------");
+                    selection.remove(getString(R.string.chicken_caesar));
+                    selection.remove("----------------------------------------------------------------------------------");
+                    selection.remove(getString(R.string.chicken_caesar_idea));
                 }
                 break;
             case R.id.checkbox_triprlcrown_img:
                 if (checked) {
                     selection.add("----------------------------------------------------------------------------------");
-                    selection.add("TRIPLE CROWN");
+                    selection.add(getString(R.string.triple_crown));
                     selection.add("----------------------------------------------------------------------------------");
-                    selection.add("Pepperoni, mushrooms, crisp green peppers and crowned with 100% Pizza Mozzarella.");
+                    selection.add(getString(R.string.triple_crown_idea));
 
                 }else {
-                    selection.remove("TRIPLE CROWN");
-                    selection.remove("Pepperoni, mushrooms, crisp green peppers and crowned with 100% Pizza Mozzarella.");
+                    selection.remove("----------------------------------------------------------------------------------");
+                    selection.remove(getString(R.string.triple_crown));
+                    selection.remove("----------------------------------------------------------------------------------");
+                    selection.remove(getString(R.string.triple_crown_idea));
+
                 }
                 break;
 

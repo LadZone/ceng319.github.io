@@ -1,4 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!-- Name: Alay Lad -->
+<!-- Student Number: N00676600-->
+<!-- Name: Assignment 1 -->
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -39,19 +42,8 @@
                 <ImageView
                     app:srcCompat="@drawable/buttoncusomm"
                     android:id="@+id/imageView5"
-                    android:layout_height="150dp"
-                    android:layout_width="300dp" />
-
-                <ImageView
-                    android:layout_width="300dp"
-                    android:layout_height="150dp"
-                    app:srcCompat="@drawable/buttonpizzaaa"
-                    android:id="@+id/imageView6"
-                    android:adjustViewBounds="false"
-                    android:cropToPadding="true"
-                    android:layout_marginStart="303dp"
-                    android:layout_alignParentStart="true"
-                    android:layout_alignParentTop="true" />
+                    android:layout_width="600dp"
+                    android:layout_height="600dp" />
 
                 <TextView
                     android:text="@string/custom_pizza_idea"
@@ -64,6 +56,16 @@
                     android:layout_below="@+id/textView"
                     android:layout_alignStart="@+id/textView" />
 
+                <ImageView
+                    app:srcCompat="@drawable/buttonpizzaaa"
+                    android:id="@+id/imageView6"
+                    android:adjustViewBounds="false"
+                    android:cropToPadding="true"
+                    android:layout_height="600dp"
+                    android:layout_width="600dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true" />
+
                 <TextView
                     android:text="@string/custom_pizza"
                     android:layout_width="wrap_content"
@@ -72,9 +74,9 @@
                     android:textSize="15sp"
                     android:textStyle="normal|bold|italic"
                     android:textColor="@android:color/holo_orange_light"
+                    android:layout_marginEnd="164dp"
                     android:layout_centerVertical="true"
-                    android:layout_alignEnd="@+id/imageView5"
-                    android:layout_marginEnd="15dp" />
+                    android:layout_alignEnd="@+id/imageView5" />
 
                 <TextView
                     android:text="@string/specials_pizza"
@@ -84,9 +86,9 @@
                     android:textSize="25sp"
                     android:textStyle="normal|bold|italic"
                     android:textColor="@android:color/holo_orange_dark"
-                    android:layout_marginBottom="7dp"
-                    android:layout_alignBottom="@+id/imageView6"
-                    android:layout_alignStart="@+id/imageView6" />
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignStart="@+id/imageView6"
+                    android:layout_marginStart="153dp" />
 
             </RelativeLayout>
 

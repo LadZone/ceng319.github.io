@@ -1,4 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!-- Name: Alay Lad -->
+<!-- Student Number: N00676600-->
+<!-- Name: Assignment 1 -->
 <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -25,7 +28,7 @@
 
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="40dp"
         android:text="Billing Information"
 
         android:id="@+id/textView4"
@@ -41,7 +44,7 @@
             android:id="@+id/name"
             android:layout_alignParentTop="true"
             android:layout_alignParentStart="true"
-            android:text="Name          "
+            android:text="@string/name"
             android:textColor="@android:color/holo_red_light" />
 
     <TextView
@@ -64,7 +67,7 @@
     <TableRow android:layout_width="match_parent"
         android:layout_height="wrap_content">
     <TextView
-        android:text="Address      "
+        android:text="@string/Address"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/address"
@@ -85,7 +88,7 @@
         android:layout_height="wrap_content">
 
         <TextView
-            android:text="City              "
+            android:text="@string/city"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/city"
@@ -107,7 +110,7 @@
         android:layout_height="wrap_content">
 
         <TextView
-            android:text="State           "
+            android:text="@string/state"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/Status"
@@ -130,7 +133,7 @@
         android:layout_height="wrap_content">
 
         <TextView
-            android:text="Zip               "
+            android:text="@string/zip"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/zip"
@@ -156,7 +159,7 @@
         android:layout_height="wrap_content">
 
         <TextView
-            android:text="Country      "
+            android:text="@string/Country"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/Country"
@@ -180,7 +183,7 @@
         android:layout_height="wrap_content">
 
         <TextView
-            android:text="Phone         "
+            android:text="@string/phone"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/phone"
@@ -206,7 +209,7 @@
             android:layout_height="wrap_content">
 
             <TextView
-                android:text="email         "
+                android:text="@string/Email"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/email"
@@ -226,7 +229,7 @@
 
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="40dp"
         android:text="Card Information"
 
         android:id="@+id/card"
@@ -243,7 +246,7 @@
             android:id="@+id/card_holder"
             android:layout_alignParentTop="true"
             android:layout_alignParentStart="true"
-            android:text="Card Holder           "
+            android:text="@string/Card_holder"
             android:textColor="@android:color/holo_blue_dark" />
 
         <TextView
@@ -264,7 +267,7 @@
             android:id="@+id/card_Type"
             android:layout_alignParentTop="true"
             android:layout_alignParentStart="true"
-            android:text="Card Type              "
+            android:text="@string/Card_type"
             android:textColor="@android:color/holo_blue_dark" />
 
         <TextView
@@ -285,7 +288,7 @@
             android:id="@+id/card_number"
             android:layout_alignParentTop="true"
             android:layout_alignParentStart="true"
-            android:text="Credit Card            "
+            android:text="@string/Card_number"
             android:textColor="@android:color/holo_blue_dark" />
 
         <TextView
@@ -307,7 +310,7 @@
             android:id="@+id/exp_date"
             android:layout_alignParentTop="true"
             android:layout_alignParentStart="true"
-            android:text="Expiration Date    "
+            android:text="@string/exp"
             android:textColor="@android:color/holo_blue_dark" />
 
         <TextView
@@ -333,7 +336,7 @@ android:layout_height="wrap_content">
     android:onClick="finalSelection"
     android:layout_width="150dp" />
 <Button
-    android:text="submit"
+    android:text="@string/Stubmit"
     android:layout_height="60dp"
     android:id="@+id/button4"
     android:background="@drawable/next"

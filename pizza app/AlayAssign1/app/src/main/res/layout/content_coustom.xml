@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_menu"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="alay.lad.MenuActivity"
+    tools:showIn="@layout/activity_custom"
+    android:background="@drawable/bk"
+    android:orientation="vertical"
+    android:weightSum="1"
+    android:stretchColumns="1">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:textSize="21dp"
+        android:entries="@array/SIZE"
+        android:background="@drawable/dropbb"
+        android:clipToPadding="false"
+        android:gravity="center_vertical|center_horizontal|center" />
+
+    <Spinner
+        android:id="@+id/spinner2"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:entries="@array/CHEESE"
+        android:background="@drawable/dropbb" />
+
+
+    <TableRow android:background="?attr/colorButtonNormal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="@string/meat"
+
+            android:id="@+id/textView4"
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="25sp"
+            />
+    </TableRow>
+
+
+    <TableRow android:background="@color/my_spinner_text_color"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <CheckBox android:id="@+id/checkbox_Beef"
+            android:text="@string/beef"
+            android:onClick="onCheckboxClicked"
+            android:padding="3dip"
+            android:layout_width="150dp"
+            android:textSize="18sp"
+            android:textColor="@android:color/holo_orange_light"
+            tools:background="@color/my_spinner_text_color" />
+        <CheckBox android:id="@+id/checkbox_Chicken"
+            android:text="@string/chicken"
+            android:onClick="onCheckboxClicked"
+            android:padding="3dip"
+            android:layout_width="150dp"
+            android:textSize="18sp"
+            android:textColor="@android:color/holo_orange_light"
+            tools:background="@color/my_spinner_text_color" />
+    </TableRow>
+
+
+
+    <TableRow android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <CheckBox android:id="@+id/checkbox_Pepperoni"
+            android:text="@string/pepperoni"
+            android:onClick="onCheckboxClicked"
+            android:padding="3dip"
+            android:layout_width="150dp"
+            android:textSize="18sp"
+            android:textColor="@android:color/holo_orange_light"
+            android:background="@color/my_spinner_text_color" />
+        <CheckBox android:id="@+id/checkbox_Bacon_Crumble"
+
+            android:text="@string/bacon_crumble"
+            android:onClick="onCheckboxClicked"
+            android:padding="3dip"
+            android:layout_width="match_parent"
+            android:textSize="18sp"
+            android:textColor="@android:color/holo_orange_light"
+            android:background="@color/my_spinner_text_color" />
+    </TableRow>
+
+
+    <TableRow android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <CheckBox android:id="@+id/checkbox_Bacon"
+            android:text="@string/bacon"
+            android:onClick="onCheckboxClicked"
+            android:padding="3dip"
+            android:layout_width="150dp"
+            android:textSize="18sp"
+            android:textColor="@android:color/holo_orange_light"
+            android:background="@color/my_spinner_text_color" />
+        <CheckBox android:id="@+id/checkbox_Ham"
+            android:text="@string/ham"
+            android:onClick="onCheckboxClicked"
+            android:padding="3dip"
+            android:layout_width="match_parent"
+            android:textSize="18sp"
+            android:textColor="@android:color/holo_orange_light"
+            android:background="@color/my_spinner_text_color" />
+    </TableRow>
+    <TableRow android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <CheckBox android:id="@+id/checkbox_hot_sausage"
+            android:text="@string/hot_sausage"
+            android:onClick="onCheckboxClicked"
+            android:padding="3dip"
+            android:layout_width="150dp"
+            android:textSize="18sp"
+            android:textColor="@android:color/holo_orange_light"
+            android:background="@color/my_spinner_text_color" />
+        <CheckBox android:id="@+id/checkbox_mild_sausage"
+            android:text="@string/mild_sausage"
+            android:onClick="onCheckboxClicked"
+            android:padding="3dip"
+            android:layout_width="match_parent"
+            android:textSize="18sp"
+            android:textColor="@android:color/holo_orange_light"
+            android:background="@color/my_spinner_text_color" />
+    </TableRow>
+
+
+
+
+
+
+
+
+    <TableRow android:background="?attr/colorButtonNormal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="@string/veggies"
+
+            android:id="@+id/Veggies"
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="25sp"
+            />
+
+    </TableRow>
+
+
+
+    <TableRow android:background="@color/my_spinner_text_color"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+        <CheckBox android:id="@+id/checkbox_Mushroom"
+            android:text="@string/mushroom"
+            android:onClick="onCheckboxClicked"
+            android:padding="3dip"
+            android:layout_width="150dp"
+            android:textSize="18sp"
+            android:textColor="@android:color/holo_orange_light"
+            tools:background="@color/my_spinner_text_color" />
+        <CheckBox android:id="@+id/checkbox_Green_Pepper"
+            android:text="@string/green_pepper"
+            android:onClick="onCheckboxClicked"
+            android:padding="3dip"
+            android:layout_width="150dp"
+            android:textSize="18sp"
+            android:textColor="@android:color/holo_orange_light"
+            tools:background="@color/my_spinner_text_color" />
+    </TableRow>
+
+
+
+    <TableRow android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <CheckBox android:id="@+id/checkbox_Pineapple"
+            android:text="@string/pineapple"
+            android:onClick="onCheckboxClicked"
+            android:padding="3dip"
+            android:layout_width="150dp"
+            android:textSize="18sp"
+            android:textColor="@android:color/holo_orange_light"
+            android:background="@color/my_spinner_text_color" />
+        <CheckBox android:id="@+id/checkbox_red_onions"
+
+            android:text="@string/red_onions"
+            android:onClick="onCheckboxClicked"
+            android:padding="3dip"
+            android:layout_width="match_parent"
+            android:textSize="18sp"
+            android:textColor="@android:color/holo_orange_light"
+            android:background="@color/my_spinner_text_color" />
+    </TableRow>
+
+
+    <TableRow android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <CheckBox android:id="@+id/checkbox_red_pepper"
+            android:text="@string/red_pepper"
+            android:onClick="onCheckboxClicked"
+            android:padding="3dip"
+            android:layout_width="150dp"
+            android:textSize="18sp"
+            android:textColor="@android:color/holo_orange_light"
+            android:background="@color/my_spinner_text_color" />
+        <CheckBox android:id="@+id/checkbox_Tomatoes"
+            android:text="@string/tomatoes"
+            android:onClick="onCheckboxClicked"
+            android:padding="3dip"
+            android:layout_width="match_parent"
+            android:textSize="18sp"
+            android:textColor="@android:color/holo_orange_light"
+            android:background="@color/my_spinner_text_color" />
+    </TableRow>
+
+    <TableRow android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <CheckBox android:id="@+id/checkbox_green_olives"
+            android:text="@string/green_olives"
+            android:onClick="onCheckboxClicked"
+            android:padding="3dip"
+            android:layout_width="150dp"
+            android:textSize="18sp"
+            android:textColor="@android:color/holo_orange_light"
+            android:background="@color/my_spinner_text_color" />
+        <CheckBox android:id="@+id/checkbox_black_olives"
+            android:text="@string/black_olives"
+            android:onClick="onCheckboxClicked"
+            android:padding="3dip"
+            android:layout_width="match_parent"
+            android:textSize="18sp"
+            android:textColor="@android:color/holo_orange_light"
+            android:background="@color/my_spinner_text_color" />
+    </TableRow>
+
+
+
+    <TableRow android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:text="@string/back"
+            android:layout_height="60dp"
+            android:id="@+id/Back"
+            android:background="@drawable/back"
+            android:onClick="finalSelection"
+            android:layout_width="180dp" />
+    <Button
+        android:text="@string/next"
+        android:layout_height="60dp"
+        android:id="@+id/button4"
+        android:background="@drawable/next"
+        android:onClick="finalSelection"
+        android:layout_width="200dp" />
+    </TableRow>
+    </LinearLayout>
+    </ScrollView>
+
+
+</TableLayout>

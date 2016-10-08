@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Alay</string>
+    <string name="custom_pizza">CREER VOTRE PROPRE PIZZA</string>
+    <string name="custom_pizza_idea">Créez votre Pizza idéal</string>
+    <string name="specials_pizza">PIZZA</string>
+    <string name="start">DÉMARRER</string>
+    <string name="ENGLISH">ENGLISH</string>
+    <string name="FRENCH">FRENCH</string>
+</resources>

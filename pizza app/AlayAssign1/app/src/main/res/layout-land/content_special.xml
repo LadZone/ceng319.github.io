@@ -1,0 +1,464 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_menu"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="alay.lad.MenuActivity"
+    tools:showIn="@layout/activity_special"
+    android:orientation="vertical"
+    android:weightSum="1"
+    android:stretchColumns="1"
+    android:background="@drawable/bk">
+    <TextView
+        android:layout_width="match_parent"
+        android:text="Special Pizza"
+        android:layout_height="50dp"
+        android:background="@drawable/bar"
+        android:gravity="center_vertical|center_horizontal"
+        android:layout_alignBaseline="@+id/meat_list"
+        android:layout_alignBottom="@+id/meat_list"
+        android:layout_alignParentStart="true"
+        android:textSize="20sp"
+        android:textColor="@android:color/background_light"
+        android:id="@+id/special_pizza" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="150dp">
+                <CheckBox android:id="@+id/checkbox_chesses_img"
+                    android:onClick="onCheckboxClicked"
+                    android:padding="3dip"
+                    android:layout_width="30dp"
+                    android:background="@color/my_spinner_text_color"
+                    android:gravity="start"
+                    android:layout_gravity="center_vertical" />
+                <RelativeLayout>
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/cheese"
+                        android:id="@+id/imageView13"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentStart="true">
+
+                    </ImageView>
+
+                    <TextView
+                        android:text="@string/cheese_lover_idea"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textView7"
+                        android:layout_width="140dp"
+                        android:textColor="@android:color/background_light"
+                        android:textSize="12sp"
+                        android:layout_below="@+id/textView6"
+                        android:layout_alignStart="@+id/textView6" />
+
+                    <TextView
+                        android:text="@string/cheese_lover"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="33dp"
+                        android:id="@+id/textView6"
+                        android:textAllCaps="false"
+                        android:textColor="@android:color/holo_orange_light"
+                        android:textStyle="normal|bold|italic"
+                        android:textSize="15sp"
+                        android:layout_marginEnd="216dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentEnd="true" />
+
+                </RelativeLayout>
+
+
+            </TableRow>
+
+            <ImageView
+                android:layout_width="match_parent"
+                app:srcCompat="@drawable/brkline"
+                android:layout_height="20dp" />
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="150dp">
+                <CheckBox android:id="@+id/checkbox_supreme_img"
+                    android:onClick="onCheckboxClicked"
+                    android:padding="3dip"
+                    android:layout_width="30dp"
+                    android:background="@color/my_spinner_text_color"
+                    android:gravity="start"
+                    android:layout_gravity="center_vertical" />
+                <RelativeLayout>
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/supreme"
+                        android:id="@+id/imageView11" />
+
+                    <TextView
+                        android:text="@string/supreme_lover_idea"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textView8"
+                        android:textColor="@android:color/background_light"
+                        android:layout_width="140dp"
+                        android:textSize="12sp"
+                        android:layout_below="@+id/textView9"
+                        android:layout_alignStart="@+id/textView9" />
+
+                    <TextView
+                        android:text="@string/supreme_lover"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="204dp"
+                        android:layout_marginTop="22dp"
+                        android:id="@+id/textView9"
+                        android:textAllCaps="false"
+                        android:textColor="@android:color/holo_orange_light"
+                        android:textStyle="normal|bold|italic"
+                        android:textSize="15sp"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentEnd="true" />
+
+                </RelativeLayout>
+            </TableRow>
+
+
+            <ImageView
+                app:srcCompat="@drawable/brkline"
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="150dp">
+
+                <CheckBox android:id="@+id/checkbox_supersupreme_img"
+                    android:onClick="onCheckboxClicked"
+                    android:padding="3dip"
+                    android:layout_width="30dp"
+                    android:background="@color/my_spinner_text_color"
+                    android:gravity="start"
+                    android:layout_gravity="center_vertical" />
+
+                <RelativeLayout>
+
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/supersupreme"
+                        android:id="@+id/imageView10" />
+
+                    <TextView
+                        android:text="@string/super_supreme_idea"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textView10"
+                        android:textColor="@android:color/background_light"
+                        android:layout_width="140dp"
+                        android:textSize="12sp"
+                        android:layout_below="@+id/textView11"
+                        android:layout_alignStart="@+id/textView11" />
+
+                    <TextView
+                        android:text="@string/super_supreme"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="200dp"
+                        android:layout_marginTop="20dp"
+                        android:id="@+id/textView11"
+                        android:textAllCaps="false"
+                        android:textColor="@android:color/holo_orange_light"
+                        android:textStyle="normal|bold|italic"
+                        android:textSize="15sp"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentEnd="true" />
+
+                </RelativeLayout>
+            </TableRow>
+            <ImageView
+                app:srcCompat="@drawable/brkline"
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="150dp">
+                <CheckBox android:id="@+id/checkbox_pepperonilovers_img"
+                    android:onClick="onCheckboxClicked"
+                    android:padding="3dip"
+                    android:layout_width="30dp"
+                    android:background="@color/my_spinner_text_color"
+                    android:gravity="start"
+                    android:layout_gravity="center_vertical" />
+                <RelativeLayout>
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/pepperonilovers"
+                        android:id="@+id/imageView9" />
+
+                    <TextView
+                        android:text="@string/pepperoni_love_idea"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textView12"
+                        android:textColor="@android:color/background_light"
+                        android:layout_width="140dp"
+                        android:textSize="12sp"
+                        android:layout_below="@+id/textView13"
+                        android:layout_alignStart="@+id/textView13" />
+
+                    <TextView
+                        android:text="@string/pepperoni_lover"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="184dp"
+                        android:layout_marginTop="38dp"
+                        android:id="@+id/textView13"
+                        android:textAllCaps="false"
+                        android:textColor="@android:color/holo_orange_light"
+                        android:textStyle="normal|bold|italic"
+                        android:textSize="15sp"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentEnd="true" />
+                </RelativeLayout>
+            </TableRow>
+            <ImageView
+                app:srcCompat="@drawable/brkline"
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="150dp">
+                <CheckBox android:id="@+id/checkbox_meatlover_img"
+                    android:onClick="onCheckboxClicked"
+                    android:padding="3dip"
+                    android:layout_width="30dp"
+                    android:background="@color/my_spinner_text_color"
+                    android:gravity="start"
+                    android:layout_gravity="center_vertical" />
+                <RelativeLayout>
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/meatlover"
+                        android:id="@+id/imageView7" />
+
+                    <TextView
+                        android:text="@string/meat_lover_idea"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textView14"
+                        android:textColor="@android:color/background_light"
+                        android:layout_width="140dp"
+                        android:textSize="12sp"
+                        android:layout_below="@+id/textView15"
+                        android:layout_alignStart="@+id/textView15" />
+
+                    <TextView
+                        android:text="@string/meat_lover"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="221dp"
+                        android:layout_marginTop="38dp"
+                        android:id="@+id/textView15"
+                        android:textAllCaps="false"
+                        android:textColor="@android:color/holo_orange_light"
+                        android:textStyle="normal|bold|italic"
+                        android:textSize="15sp"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentEnd="true" />
+                </RelativeLayout>
+            </TableRow>
+            <ImageView
+                app:srcCompat="@drawable/brkline"
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="150dp">
+                <CheckBox android:id="@+id/checkbox_hawaiian_img"
+                    android:onClick="onCheckboxClicked"
+                    android:padding="3dip"
+                    android:layout_width="30dp"
+                    android:background="@color/my_spinner_text_color"
+                    android:gravity="start"
+                    android:layout_gravity="center_vertical" />
+                <RelativeLayout>
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/hawaiian"
+                        android:id="@+id/imageView4" />
+
+                    <TextView
+                        android:text="@string/hawaiian_idea"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textView16"
+                        android:textColor="@android:color/background_light"
+                        android:layout_width="140dp"
+                        android:textSize="12sp"
+                        android:layout_below="@+id/textView17"
+                        android:layout_alignStart="@+id/textView17" />
+
+                    <TextView
+                        android:text="@string/hawaiian"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="236dp"
+                        android:layout_marginTop="29dp"
+                        android:id="@+id/textView17"
+                        android:textAllCaps="false"
+                        android:textColor="@android:color/holo_orange_light"
+                        android:textStyle="normal|bold|italic"
+                        android:textSize="15sp"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentEnd="true" />
+                </RelativeLayout>
+            </TableRow>
+            <ImageView
+                app:srcCompat="@drawable/brkline"
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="150dp">
+                <CheckBox android:id="@+id/checkbox_chickencaesar_img"
+                    android:onClick="onCheckboxClicked"
+                    android:padding="3dip"
+                    android:layout_width="30dp"
+                    android:background="@color/my_spinner_text_color"
+                    android:gravity="start"
+                    android:layout_gravity="center_vertical" />
+                <RelativeLayout>
+
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/chickencaesar"
+                        android:id="@+id/imageView3" />
+
+                    <TextView
+                        android:text="@string/chicken_caesar_idea"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textView18"
+                        android:textColor="@android:color/background_light"
+                        android:layout_width="140dp"
+                        android:textSize="12sp"
+                        android:layout_below="@+id/textView19"
+                        android:layout_alignStart="@+id/textView19" />
+
+                    <TextView
+                        android:text="@string/chicken_caesar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="193dp"
+                        android:layout_marginTop="22dp"
+                        android:id="@+id/textView19"
+                        android:textAllCaps="false"
+                        android:textColor="@android:color/holo_orange_light"
+                        android:textStyle="normal|bold|italic"
+                        android:textSize="15sp"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentEnd="true" />
+                </RelativeLayout>
+            </TableRow>
+            <ImageView
+                app:srcCompat="@drawable/brkline"
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="150dp">
+                <CheckBox android:id="@+id/checkbox_triprlcrown_img"
+                    android:onClick="onCheckboxClicked"
+                    android:padding="3dip"
+                    android:layout_width="30dp"
+                    android:background="@color/my_spinner_text_color"
+                    android:gravity="start"
+                    android:layout_gravity="center_vertical" />
+                <RelativeLayout>
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/triprlcrown"
+                        android:id="@+id/imageView2" />
+
+                    <TextView
+                        android:text="@string/triple_crown_idea"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textView20"
+                        android:textColor="@android:color/background_light"
+                        android:layout_width="140dp"
+                        android:textSize="12sp"
+                        android:layout_below="@+id/textView21"
+                        android:layout_alignStart="@+id/textView21" />
+
+                    <TextView
+                        android:text="@string/triple_crown"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="211dp"
+                        android:layout_marginTop="29dp"
+                        android:id="@+id/textView21"
+                        android:textAllCaps="false"
+                        android:textColor="@android:color/holo_orange_light"
+                        android:textStyle="normal|bold|italic"
+                        android:textSize="15sp"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentEnd="true" />
+                </RelativeLayout>
+            </TableRow>
+            <ImageView
+                app:srcCompat="@drawable/brkline"
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="150dp">
+                <Button
+                    android:text="Back"
+                    android:id="@+id/Back"
+                    android:background="@drawable/back"
+                    android:onClick="finalSelection"
+                    android:layout_width="150dp"
+                    android:layout_height="60dp" />
+                <Button
+                    android:text="Next"
+                    android:layout_height="70dp"
+                    android:id="@+id/button4"
+                    android:background="@drawable/next"
+                    android:onClick="finalSelection"
+                    android:layout_width="170dp" />
+            </TableRow>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+
+</TableLayout>

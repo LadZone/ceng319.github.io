@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_menu"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="alay.lad.MenuActivity"
+    tools:showIn="@layout/activity_menu"
+    android:background="@drawable/bk">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="MENU"
+
+                android:id="@+id/textView4"
+                android:textColor="@android:color/holo_red_dark"
+                android:textSize="30sp"
+                android:background="@android:drawable/bottom_bar"
+                android:gravity="center_vertical|center_horizontal" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="152dp">
+
+
+                <ImageView
+                    app:srcCompat="@drawable/buttoncusomm"
+                    android:id="@+id/imageView5"
+                    android:layout_height="150dp"
+                    android:layout_width="300dp" />
+
+                <ImageView
+                    android:layout_width="300dp"
+                    android:layout_height="150dp"
+                    app:srcCompat="@drawable/buttonpizzaaa"
+                    android:id="@+id/imageView6"
+                    android:adjustViewBounds="false"
+                    android:cropToPadding="true"
+                    android:layout_marginStart="303dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true" />
+
+                <TextView
+                    android:text="@string/custom_pizza_idea"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView2"
+                    android:textStyle="normal|italic"
+                    android:textSize="15sp"
+                    android:textColor="@android:color/background_light"
+                    android:layout_below="@+id/textView"
+                    android:layout_alignStart="@+id/textView" />
+
+                <TextView
+                    android:text="@string/custom_pizza"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView"
+                    android:textSize="15sp"
+                    android:textStyle="normal|bold|italic"
+                    android:textColor="@android:color/holo_orange_light"
+                    android:layout_centerVertical="true"
+                    android:layout_alignEnd="@+id/imageView5"
+                    android:layout_marginEnd="15dp" />
+
+                <TextView
+                    android:text="@string/specials_pizza"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView3"
+                    android:textSize="25sp"
+                    android:textStyle="normal|bold|italic"
+                    android:textColor="@android:color/holo_orange_dark"
+                    android:layout_marginBottom="7dp"
+                    android:layout_alignBottom="@+id/imageView6"
+                    android:layout_alignStart="@+id/imageView6" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

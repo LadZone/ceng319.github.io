@@ -1,0 +1,96 @@
+<resources>
+    <string name="app_name">AlayAssign1</string>
+    <string name="title_activity_menu"></string>
+    <string name="custom_pizza">CREATE YOUR OWN PIZZA</string>
+    <string name="custom_pizza_idea">Create your ideal Pizza</string>
+    <string name="specials_pizza">PIZZA</string>
+    <string name="start">START</string>
+    <string name="ENGLISH">ENGLISH</string>
+    <string name="FRENCH">FRENCH</string>
+    <string name="title_activity_special"></string>
+    <string name="special">SPECIAL</string>
+
+
+    <string name="menu">MENU</string>
+
+
+    <string name="beef">Beef</string>
+    <string name="pepperoni">Pepperoni</string>
+    <string name="bacon">Bacon</string>
+    <string name="green_pepper">Green Pepper</string>
+
+    <string name="hot_sausage">Hot Sausage</string>
+    <string name="mushroom">Mushroom</string>
+    <string name="pineapple">Pineapple</string>
+    <string name="red_onions">Red Onions</string>
+
+    <string name="red_pepper">Red Pepper</string>
+    <string name="green_olives">Green Olives</string>
+    <string name="chicken">Chicken</string>
+    <string name="tomatoes">Tomatoes</string>
+
+    <string name="bacon_crumble">Bacon Crumble</string>
+    <string name="ham">Ham</string>
+    <string name="mild_sausage">Mild Sausage</string>
+    <string name="black_olives">Black Olives</string>
+
+
+    <string name="next">NEXT</string>
+    <string name="back">BACK</string>
+
+
+    <string name="meat">MEAT</string>
+    <string name="veggies">VEGGIES</string>
+
+
+    <string name="size">SIZE</string>
+    <string name="cheese">CHEESE</string>
+
+
+    <string-array name="SIZE">
+        <item>12" Medium </item>
+        <item>14" Large</item>
+        <item>16" Extra Large</item>
+    </string-array>
+
+    <string-array name="CHEESE">
+        <item>Pizza Mozzarella </item>
+        <item>Regular</item>
+    </string-array>
+
+
+    <string name="meat_lover">MEAT LOVER</string>
+    <string name="meat_lover_idea">Pepperoni, Italian sausage, mild sausage, beef topping, ham, bacon crumble and pizza mozzarella.</string>
+
+    <string name="pepperoni_lover">PEPPERONI LOVER</string>
+    <string name="pepperoni_love_idea">Pepperoni, Italian sausage, mild sausage, beef topping, ham, bacon crumble and pizza mozzarella.</string>
+
+    <string name="super_supreme">SUPER SUPREME</string>
+    <string name="super_supreme_idea">Pepperoni, Italian Sausage, mild sausage, beef topping, ham, green pepper, mushrooms, red onion, black olives and pizza mozzarella.</string>
+
+    <string name="supreme_lover">SUPREME LOVER</string>
+    <string name="supreme_lover_idea">Pepperoni, mild sausage, beef topping, green pepper, mushrooms, red onion and pizza mozzarella.</string>
+
+
+    <string name="triple_crown">TRIPLE CROWN</string>
+    <string name="triple_crown_idea">Pepperoni, mushrooms, crisp green peppers and crowned with 100% Pizza Mozzarella.</string>
+
+    <string name="hawaiian">HAWAIIAN</string>
+    <string name="hawaiian_idea">The amazing and classic combination of Ham and Pineapple on a base of your choice with extra pizza mozzarella.</string>
+
+    <string name="chicken_caesar">CHICKEN CAESAR</string>
+    <string name="chicken_caesar_idea">Hail Caesar! The classic salad inspired this pizza with grilled chicken, bacon, roasted garlic, creamy Alfredo sauce and 100% Pizza Mozzarella and parmesan cheeses.</string>
+
+    <string name="cheese_lover">CHEESE LOVER</string>
+    <string name="cheese_lover_idea">Extra pizza mozzarella and two of your favourite toppings.</string>
+
+
+    <string-array name="Credit">
+        <item>Visa </item>
+        <item>Master Card</item>
+    </string-array>
+    <string name="title_activity_detail"></string>
+    <string name="title_activity_order_confirmation"></string>
+    <string name="title_activity_order"></string>
+    <string name="title_activity_special_details">SpecialDetails</string>
+</resources>

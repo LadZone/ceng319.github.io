@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+
+    tools:context="com.ladzone.fimp.assigment2.AddTest">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/select_patient"
+        android:id="@+id/textView"
+        android:textColor="@color/text"
+        android:gravity="fill_vertical"
+        android:textSize="16dp" />
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/spinner" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/blood_pressure"
+        android:id="@+id/textView2"
+        android:textColor="@color/text"
+        android:gravity="fill_vertical"
+        android:textSize="16dp" />
+
+        <TableLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+
+
+
+              <RadioGroup android:id="@+id/RadioGroup01"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:orientation="horizontal"
+                  android:layout_gravity="center_horizontal">
+
+
+                  <RadioButton android:id="@+id/negative"
+                      android:layout_width="175dp"
+                      android:layout_height="40dp"
+                      android:text="@string/negative"
+                      android:layout_gravity="right">
+                  </RadioButton>
+
+                  <RadioButton
+                      android:id="@+id/positive"
+                      android:layout_width="175dp"
+                      android:layout_height="40dp"
+                      android:text="@string/positive">
+                  </RadioButton>
+              </RadioGroup>
+
+
+</TableLayout>
+
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/cholesterol"
+        android:id="@+id/textView3"
+        android:textColor="@color/text"
+        android:gravity="fill_vertical"
+        android:textSize="16dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/editText"
+        android:hint="@string/enter_cholesterol"
+        android:background="@android:color/transparent"
+        android:textColor="@color/MainText" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/temperature"
+        android:id="@+id/textView4"
+        android:textColor="@color/text"
+        android:gravity="fill_vertical"
+        android:textSize="16dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/editText2"
+        android:hint="@string/enter_temperature"
+        android:background="@android:color/transparent"
+        android:textColor="@color/MainText" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/test_date"
+        android:id="@+id/textView5"
+        android:textColor="@color/text"
+        android:gravity="fill_vertical"
+        android:textSize="16dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:id="@+id/AddDate"
+            android:onClick="showDatePickerDialog"
+            android:textColor="@color/MainText"
+            android:gravity="fill_vertical"
+            android:hint="@string/enter_test_date"
+            android:layout_gravity="center_horizontal" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"/>
+
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:text="@string/add_Test"
+        android:id="@+id/button"
+        android:layout_gravity="center_horizontal|bottom"
+        android:textColor="@color/abc_primary_text_material_dark"
+        android:background="@color/fabplush" />
+
+</FrameLayout>

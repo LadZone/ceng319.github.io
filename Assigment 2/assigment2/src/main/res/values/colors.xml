@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#83E4E1</color>
+    <color name="colorPrimaryDark">#00568f</color>
+    <color name="fabplush">#004979</color>
+
+
+    <color name="fabAccount">#f8A61E</color>
+    <color name="fabTest">#50E3C2</color>
+    <color name="background">#55000000</color>
+    <color name="MainText">#4a4a4a</color>
+    <color name="text">#4a4a4a</color>
+
+</resources>

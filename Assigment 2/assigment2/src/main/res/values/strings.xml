@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">View Information</string>
+    <string name="action_settings">Settings</string>
+    <string name="add_patient">Add Patient</string>
+    <string name="add_Test">Add Test</string>
+
+    <string name="my_patient">MY PATIENTS</string>
+    <string name="all_patient">ALL PATIENTS</string>
+    <string name="negative">Negative</string>
+    <string name="positive">Positive</string>
+
+
+    <string name="select_patient">Select Patient</string>
+    <string name="blood_pressure">Blood Pressure</string>
+    <string name="cholesterol">Cholesterol</string>
+    <string name="temperature">Temperature</string>
+    <string name="test_date">Test Date</string>
+
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="enter_first_name">Enter First Name</string>
+    <string name="enter_last_name">Enter Last Name</string>
+    <string name="select_department">Select Department</string>
+
+
+    <string name="enter_cholesterol">Enter Cholesterol</string>
+    <string name="enter_temperature">Enter Temperature</string>
+    <string name="enter_test_date">Select Date</string>
+
+    <string-array name="department">
+        <item>Audiology</item>
+        <item>Biochemical Genetics</item>
+
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+</resources>

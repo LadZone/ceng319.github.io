@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+    <TableRow
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content">
+
+
+    <TextView
+        android:id="@+id/student_Idnum"
+        android:layout_height="wrap_content"
+        android:text="Nurse ID #: "
+        android:layout_width="wrap_content" />
+    <TextView
+        android:id="@+id/student_Id"
+        android:layout_height="match_parent"
+        android:layout_width="wrap_content" />
+
+        <TextView
+            android:id="@+id/Room"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="                                      Room: "/>
+
+        <TextView
+            android:id="@+id/Num"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="A305 "/>
+    </TableRow>
+    <TextView
+        android:id="@+id/student_name"
+        android:layout_height="wrap_content"
+        android:paddingLeft="6dip"
+        android:paddingTop="6dip"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:layout_width="150dp" />
+
+</LinearLayout>

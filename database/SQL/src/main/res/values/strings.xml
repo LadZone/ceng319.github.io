@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">SQLiteDB</string>
+
+
+    <string-array name="department">
+        <item>Audiology</item>
+        <item>Biochemical Genetics</item>
+
+    </string-array>
+</resources>

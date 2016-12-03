@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="pager" type="id"/>
+    <string name="app_name">AndroidViewPager</string>
+    <string name="hello">Hello World, AndroidViewPagerActivity!</string>
+</resources>

@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "D:\\MyApplication4\\androidViewPager\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_a.xml",
+        "source": "D:\\MyApplication4\\androidViewPager\\src\\main\\res\\layout\\fragment_a.xml"
+    },
+    {
+        "merged": "D:\\MyApplication4\\androidViewPager\\build\\intermediates\\res\\merged\\debug\\layout\\main.xml",
+        "source": "D:\\MyApplication4\\androidViewPager\\src\\main\\res\\layout\\main.xml"
+    },
+    {
+        "merged": "D:\\MyApplication4\\androidViewPager\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_b.xml",
+        "source": "D:\\MyApplication4\\androidViewPager\\src\\main\\res\\layout\\fragment_b.xml"
+    }
+]

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instant-run
+    abi="armeabi-v7a,armeabi"
+    api-level="23"
+    density="xxhdpi"
+    format="7"
+    timestamp="364657195503203"
+    token="-1335796360966074261" >
+
+    <task
+        name="javac"
+        duration="0" />
+    <task
+        name="instant-run-dex"
+        duration="0" />
+    <task
+        name="instant-run-transform"
+        duration="49" />
+    <task
+        name="verifier"
+        duration="3" />
+
+    <artifact
+        location="D:\MyApplication4\androidViewPager\build\intermediates\transforms\dex\debug\folders\1000\5\slice_0\classes.dex"
+        type="DEX" />
+
+    <build timestamp="363663810051811" >
+        <artifact
+            location="D:\MyApplication4\androidViewPager\build\outputs\apk\androidViewPager-debug.apk"
+            type="MAIN" />
+    </build>
+    <build timestamp="363840313289279" >
+        <artifact
+            location="D:\MyApplication4\androidViewPager\build\intermediates\res\resources-debug.ap_"
+            type="RESOURCES" />
+    </build>
+    <build timestamp="364657195503203" >
+        <artifact
+            location="D:\MyApplication4\androidViewPager\build\intermediates\transforms\dex\debug\folders\1000\5\slice_0\classes.dex"
+            type="DEX" />
+    </build>
+
+</instant-run>
